@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let arr = ["apple", "mango", "banana", 3, 4, 5, true, { name: "vamshi" }];
+       let num = [];
+       let str = [];
+         let bool = [];
+       let obj = [];
+
+for (let p of arr) {
+    if (typeof p === "number") {
+        num.push(p);
+    } else if (typeof p === "string") {
+        str.push(p); 
+    } else if (typeof p === "boolean") {
+        bool.push(p); 
+    } else if (typeof p === "object") {
+        obj.push(p); 
+    }
+}
+
+console.log("num =", num);
+console.log("str =", str);
+console.log("bool =", bool);
+console.log("obj =", obj);
+
+        
+    </script>
+</body>
+</html>
